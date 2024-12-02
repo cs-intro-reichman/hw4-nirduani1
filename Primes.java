@@ -16,10 +16,13 @@ public class Primes {
             
         }
         System.out.println("Prime numbers up to " + n + ":") ;
+        int counter = 0 ;
         for (int i = 2; i <= n ; i++) {
             if (arr[i]){
-                System.out.println(i + " ");
+                System.out.println(i + " ") ;
+                counter++ ;
             }
         }
+        System.out.println("There are " + counter + " primes between 2 and " + n);
     }
 }
